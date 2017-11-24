@@ -19,3 +19,12 @@ for index, letter in enumerate(names):
     print '%d, %s' % (index, letter)
 
 print ''
+
+
+alnums = ['abc', 'def', 'ghi', 'jkl', 'mno', 'pqr', 'stu', 'vwx', 'yz0', '123']
+for s in reversed(alnums):
+    print s
+print ''
+
+for s in sorted(alnums):
+    print s

@@ -33,3 +33,24 @@ print id(w)
 print w
 print id(x)
 print x
+print ''
+
+print set()
+print set([])
+print set(())
+print ''
+
+t = frozenset(['abc', 'efg'])
+print t
+print len(t)
+print 'abc' in t
+print ''
+
+f = open('numbers', 'w')
+for i in range(5):
+    f.write('%d\n' % i)
+
+f.close()
+f = open('numbers', 'r')
+print set(f)
+f.close()
