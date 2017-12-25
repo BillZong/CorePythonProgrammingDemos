@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""Test demo 8.1 for chapter 7."""
+"""Test demo 8.1 for chapter 8."""
 
 x, y = 4, 3
 smaller = x if x < y else y
