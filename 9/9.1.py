@@ -27,22 +27,12 @@ def show_all_lines(file_path):
         return None
 
     for line in f.readlines():
-        if is_pass_line(line):
-            continue
-
-        elif '#' in line:
-            strip_line = line.lstrip()
-            if len(strip_line) == 0:
-                print ''
-                continue
-            loc = strip_line.find('#')
-            if loc == 1:
-                print ''
-                continue
-            loc = line.find('#')
-            print line[:loc],
-            # This line won't be shown.
-        else:
-            print line,
+        index = line.find('#')  # 获取带注释句'#'的位置索引
+        if index == -1 or is_pass_line(line):
+            if line.strip() != '':  # 排除纯空的行
+                print line,
+        elif index != 0:
+            if line.strip() != '':  # 排除纯空的行
+                print line[:index] + '\n'
 
 show_all_lines('9.1.py')
