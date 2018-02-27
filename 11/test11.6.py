@@ -5,7 +5,7 @@
 x = 10
 
 
-def foo():
+def foo2():
     """Showing usage of simple lambda."""
     y = 5
     # bar = lambda: x + y  # E731 warning.
@@ -15,4 +15,4 @@ def foo():
     y = 8
     print bar(y)
 
-foo()
+foo2()
