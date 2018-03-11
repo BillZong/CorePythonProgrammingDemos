@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""Demo 13.2 for chapter 13."""
+"""Test demo 13.2 for chapter 13."""
 
 
 class MyClass(object):
@@ -36,14 +36,14 @@ class MySubClass(MyClass):
         """Init."""
         super(MySubClass, self).__init__()
 
-    # def show_my_super_class(self):
-    #     """Show out my super class's name."""
-    #     print("{0}'s bases is: {1}".
-    #           format(self.__class__.__name__,
-    #                  self.__bases__))
+    def show_my_super_class(self):
+        """Show out my super class's name."""
+        print("{0}'s bases is: {1}".
+              format(self.__class__.__name__,
+                     self.__class__.__bases__))
 
 my_sub_instance = MySubClass()
-# my_sub_instance.show_my_super_class()
+my_sub_instance.show_my_super_class()
 print ''
 
 ret = isinstance(my_sub_instance, MyClass)

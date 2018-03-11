@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: UTF-8
 
-"""Demo 13.1 for chapter 13."""
+"""Test demo 13.1 for chapter 13."""
 
 
 class AddrBookEntry(object):

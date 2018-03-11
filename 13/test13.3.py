@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""Demo 13.3 for chapter 13."""
+"""Test demo 13.3 for chapter 13."""
 
 
 class P(object):
