@@ -32,3 +32,11 @@ print ''
 delattr(myInst, 'bar')
 print dir(myInst)
 print ''
+
+print myInst.__dict__
+print vars(myInst)
+print ''
+
+print locals()
+print vars()
+print ''
