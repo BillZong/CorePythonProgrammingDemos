@@ -8,6 +8,7 @@ from random import choice
 
 class RandSeq(object):
     """Docstring for RandSeq."""
+
     def __init__(self, seq):
         """Constructor."""
         self.data = seq
@@ -22,6 +23,5 @@ class RandSeq(object):
 
 
 if __name__ == '__main__':
-    for eachItem in RandSeq(
-        ('rock', 'paper', 'sissors')):
+    for eachItem in RandSeq(('rock', 'paper', 'sissors')):
         print eachItem
